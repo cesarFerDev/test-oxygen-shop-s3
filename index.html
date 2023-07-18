@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Cargar CSS-->
+    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>OXYGEN Shop</title>
+
+</head>
+
+<body>
+
+    <!--Header-->
+    <header id="header-container">
+
+        <h2 id="logo">OXYGEN Shop</h2>
+        <button id="burger-btn"><img src="Assets/icons/Menu burger.png" alt="Menú"/></button>
+        <nav class="menu">
+            <a class="menu-item" href="#why-us">WHY US</a>
+            <a class="menu-item" href="#carta-container">BENEFITS</a>
+            <a class="menu-item" href="#pricing-container">PRICES</a>
+            <a class="menu-item" href="#form-container">CONTACT</a>
+        </nav>
+        <!--Barra porcentaje-->
+        <div id="scroll-bar"></div>
+    </header>
+
+    <!--Modal-->
+    <dialog id="modal">
+        <button id="close-modal"><img src="Assets/icons/close cross.png" alt="Close dialog" /></button>
+        <form id="form-dialog" action="https://jsonplaceholder.typicode.com/guide/" method="POST">
+            <label for="subscribe">Subscribe to our newsletter!</label><br />
+            <input type="text" name="subscribe" id="subscribe" placeholder="example@mail.com"/>
+            <button id="subscribe-btn">Subscribe</button>
+        </form>
+    </dialog>
+
+    <!--Imagen + why us-->
+    <section id="sub-header">
+        <h2>Sell More!</h2>
+        <h5>Open shop on our platform and increase your sales</h5>
+        <button>Open your shop</button>
+        <img id="why-us" src="Assets/img/background.png" alt="Someone working on their computer" />
+        <h3>The most popular sales platform in country</h3>
+
+        <div id="sub-header-images">
+            <img id="img-entries" src="Assets/img/card1section1.svg" alt="100000+ daily entries" />
+            <img src="Assets/img/card2section1.svg" alt="2000000+ seen products every day" />
+            <img src="Assets/img/card3section1.svg" alt="10000 added posts daily" />
+        </div>
+
+    </section>
+
+    <!--Cartas Texto/Imagen-->
+    <section id="carta-container">
+        <div class="carta">
+            <div class="carta-text carta-text-font ">
+                <h2>Be always first!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate, soluta eaque,
+                    tenetur voluptatem, magnam corporis maiores possimus harum assumenda dolor ad alias minus!
+                    Sed
+                    fugiat quia similique ipsa excepturi!</p>
+                <hr id="red-border" />
+            </div>
+            <div class="carta-imgs">
+                <img id="mac-img" src="Assets/img/macbook.png" alt="Macbook" />
+                <img id="rombo-img" src="Assets/img/Rectangle 5.png" alt="Red diamond" />
+            </div>
+        </div>
+        <div class="carta" id="carta-segunda">
+            <div class="carta-imgs">
+                <img id="circ-img" src="Assets/img/Ellipse 3.png" alt="Blue circle" />
+                <img id="iphone-img" src="Assets/img/iphone.png" alt="Iphone" />
+            </div>
+            <div class="carta-text carta-text-font ">
+                <h2>Your shop is where you are!</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate, soluta eaque,
+                    tenetur voluptatem, magnam corporis maiores possimus harum assumenda dolor ad alias minus!
+                    Sed
+                    fugiat quia similique ipsa excepturi!</p>
+                <hr id="blue-border" />
+            </div>
+        </div>
+        <div id="carta-tercera">
+            <div class="carta" id="carta-texto-tercera">
+                <div class="texto-tercera carta-text-font ">
+                    <h2>Increase recognition your brand!</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate, soluta
+                        eaque,
+                        tenetur voluptatem, magnam corporis maiores possimus harum assumenda dolor ad alias
+                        minus! Sed
+                        fugiat quia similique ipsa excepturi!</p>
+                    <hr id="green-border" />
+                </div>
+            </div>
+            <div class="carta img-tercera">
+                <img id="trumpet-img" src="Assets/img/bg-trumpet.png" alt="Trumpet" />
+            </div>
+        </div>
+    </section>
+
+    <!--Servicios/Precios-->
+    <section id="pricing-container">
+        <h2 id="pricing-title">Pricing</h2>
+        <select class="currency-selector" name="currency" id="currency">
+            <option value="usd">USD</option>
+            <option value="eur">EUR</option>
+            <option value="gbp">GBP</option>
+        </select>
+
+        <div id="pricing-options">
+            <div class="price-option basic-style">
+                <div class="price-option-text">
+                    <div class="option-header">
+                        <h3>Basic</h3>
+                        <h2 id="basic-price">$0</h2>
+                        <br>
+                    </div>
+                    <div class="option-services">
+                        <span><img src="Assets/icons/check.png"/> 100 MB HDD</span>
+                        <span><img src="Assets/icons/check.png"/> 1 Subdomain</span>
+                        <span><img src="Assets/icons/check.png"/> 2 E-mails</span>
+                        <span><img src="Assets/icons/cross.png"/> Two years license</span>
+                        <span><img src="Assets/icons/cross.png"/> Full support</span>
+                    </div>
+                </div>
+                <button class="option-btn">Begin</button>
+            </div>
+
+            <div class="price-option pro-style">
+                <div class="price-option-text">
+                    <div class="option-header">
+                        <h3>Professional</h3>
+                        <h2 id="pro-price">$25</h2>
+                        <h5>Limited offer</h5>
+                    </div>
+
+                    <div class="option-services">
+                        <span><img src="Assets/icons/check.png"/> 500 MB HDD</span>
+                        <span><img src="Assets/icons/check.png"/> 2 Subdomains</span>
+                        <span><img src="Assets/icons/check.png"/> 5 E-mails</span>
+                        <span><img src="Assets/icons/check.png"/> One years license</span>
+                        <span><img src="Assets/icons/cross.png"/> Full support</span>
+                    </div>
+                </div>
+
+                <button class="option-btn">Begin</button>
+            </div>
+
+            <div class="price-option premium-style">
+                <div class="price-option-text">
+                    <div class="option-header">
+                        <h3>Premium</h3>
+                        <h2 id="premium-price">$60</h2>
+                        <h5>Limited offer</h5>
+                    </div>
+                    <div class="option-services">
+                        <span><img src="Assets/icons/check.png"/> 500 MB HDD</span>
+                        <span><img src="Assets/icons/check.png"/> 2 Subdomains</span>
+                        <span><img src="Assets/icons/check.png"/> 5 E-mails</span>
+                        <span><img src="Assets/icons/check.png"/> One years license</span>
+                        <span><img src="Assets/icons/check.png"/> Full support</span>
+                    </div>
+                </div>
+
+                <button class="option-btn">Begin</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Carousel-->
+    <div id="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                    aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/slides/1.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 1"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/2.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 2"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/3.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 3"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/4.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 4"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/5.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 5"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/6.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 6"/>
+                </div>
+                <div class="carousel-item">
+                    <img src="Assets/slides/7.jpg" class="d-block w-100 img-fluid" alt="Imagen Carrousel 7"/>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
+    </div>
+
+    <!--Formulario-->
+    <section id="form-container">
+        <div id="form-info">
+            <h2>Any questions?</h2>
+            <h5>Leave your email or call us!</h5>
+
+            <div id="info-icons">
+                <div id="mail-info">
+                    <img src="Assets/icons/message-icon.png" width="20" height="20" alt="Card icon"/>
+                    <span>info@bestshop.xyz</span>
+                </div>
+
+                <div id="phone-info">
+                    <img src="Assets/icons/phone-icon.png" width="20" height="20" alt="Phone icon"/>
+                    <span>123 456 789</span>
+                </div>
+            </div>
+        </div>
+
+        <form id="form" action="https://jsonplaceholder.typicode.com/guide/" method="POST">
+            <label for="name">NAME</label><br/>
+            <input id="name" name="name" type="text"/><br/><br/>
+            <label for="email">EMAIL</label><br/>
+            <input id="email" name="email" type="text"/>
+            <div id="check">
+                <div id="tick"><input id="consent" name="consent" type="checkbox"></div>
+                <label for="consent">
+                    <span id="conditions">I hereby give consent for my personal data included in my application to be
+                        processed
+                        for the purposes of the recruitment process under the European Parliament’s and
+                        Council of the European Union Regulation on the Protection of Natural Persons as
+                        of
+                        27 April 2016, with regard to the processing of personal data and on the free
+                        movement of such data, and repealing Directive 95/46/EC (Data Protection
+                        Directive)
+                    </span>
+                </label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+
+    </section>
+
+    <!--Footer-->
+    <footer id="footer-container">
+        <div id="footer-logo">
+            <h2>OXYGEN Shop</h2>
+            <span>2022 OXYGEN. All Rights Reserved</span>
+        </div>
+        <div id="social-media">
+            <a target="_blank" href="https://twitter.com"><img src="Assets/icons/Twitter.png" width="24" height="24"
+                    alt="Twitter"/></a>
+            <a target="_blank" href="https://facebook.com"><img src="Assets/icons/Facebook.png" width="24" height="24"
+                    alt="Facebook"/></a>
+        </div>
+
+        <button id="return-top"><img src="Assets/icons/top-alignment.png" alt="Return Top Icon" /></button>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+</body>
+
+</html>
